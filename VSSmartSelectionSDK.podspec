@@ -53,7 +53,20 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "VSSmartSelectionSDK"
+
+  spec.source_files = 'VSSmartSelectionSDK/Classes/**/*'
+  spec.exclude_files = [
+    'VSSmartSelectionSDK/Classes/shaders/**/*',
+  ]
+
+  spec.static_framework = true
+  
+  spec.resources = ['VSSmartSelectionSDK/Assets/*.metallib', ]
+  spec.exclude_files = [
+    'VSSmartSelectionSDK/Classes/shaders/**/*',
+
+
+  # spec.source_files  = "VSSmartSelectionSDK"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -70,7 +83,7 @@ Pod::Spec.new do |spec|
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
-  spec.resource = ['VSSmartSelectionSDK']
+  # spec.resource = ['VSSmartSelectionSDK']
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
