@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   
   spec.resources = ['VSSmartSelectionSDK/Assets/*.metallib', ]
   spec.exclude_files = [
-    'VSSmartSelectionSDK/Classes/shaders/**/*',
+    'VSSmartSelectionSDK/Classes/shaders/**/*',]
 
 
   # spec.source_files  = "VSSmartSelectionSDK"
