@@ -54,9 +54,9 @@ Pod::Spec.new do |spec|
   #
 
 
-  spec.source_files = 'VSSmartSelectionSDK/**/*'
+  spec.source_files = 'AISSelection/**/*'
   spec.exclude_files = [
-    'VSSmartSelectionSDK/**/*',
+    'AISSelection/**/*',
   ]
 
   spec.static_framework = true
